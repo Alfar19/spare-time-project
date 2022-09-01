@@ -1,5 +1,5 @@
 body{
-    background-image: url('../images/background-grigio.webp');
+    background-image: url('../images/network.gif');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -61,16 +61,26 @@ body{
 }
 
 .flip-card-front {
-    background-color: #A4C9E6;
+    background-color: lightcyan;
     color: black;
 }
 
 .flip-card-back {
-    background-color: #2980b9;
+    background-color: cadetblue;
     color: white;
     transform: rotateY(180deg);
 }
 
 .hide{
     display: none !important;
+}
+
+td, th {
+    border-radius: 10px;
+}
+td {
+    border: 2px solid lightcyan;
+}
+table {
+    border-spacing: 5px;
 }
