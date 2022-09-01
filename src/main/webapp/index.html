@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <link rel="stylesheet" href="css/custom-ui.css"/>
-
+   <script src="index.js"></script>
    <title>Curriculum Vitae</title>
 </head>
 <body>
@@ -13,55 +13,101 @@
    </div>
 
    <div class="card-container">
-      <div class="flip-card">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="./images/about-me.jpg" alt="Avatar" style="width: 90%; padding: 25px;">
-            </div>
-            <div class="flip-card-back" onclick="test()">
-               <h1>About me</h1>
-            </div>
-         </div>
-      </div>
+      <table>
+         <tr>
+            <td>
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                        <img src="./images/about-me.jpg" alt="Avatar" style="width: 90%; padding: 25px;">
+                     </div>
+                     <div class="flip-card-back about-me" onclick="showDiv(this)">
+                        <h1>About me</h1>
+                     </div>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:250px;height:250px;">
+                     </div>
+                     <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                     </div>
+                  </div>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:250px;height:250px;">
+                     </div>
+                     <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                     </div>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:250px;height:250px;">
+                     </div>
+                     <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                     </div>
+                  </div>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:250px;height:250px;">
+                     </div>
+                     <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                     </div>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar" style="width:250px;height:250px;">
+                     </div>
+                     <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                     </div>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
 
-      <div class="flip-card">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="img_avatar.png" alt="Avatar" style="width:250px;height:250px;">
-            </div>
-            <div class="flip-card-back">
-               <h1>John Doe</h1>
-               <p>Architect & Engineer</p>
-               <p>We love that guy</p>
-            </div>
-         </div>
-      </div>
+   </div>
 
-      <div class="flip-card">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="img_avatar.png" alt="Avatar" style="width:250px;height:250px;">
-            </div>
-            <div class="flip-card-back">
-               <h1>John Doe</h1>
-               <p>Architect & Engineer</p>
-               <p>We love that guy</p>
-            </div>
-         </div>
-      </div>
-
-      <div class="flip-card">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="img_avatar.png" alt="Avatar" style="width:250px;height:250px;">
-            </div>
-            <div class="flip-card-back">
-               <h1>John Doe</h1>
-               <p>Architect & Engineer</p>
-               <p>We love that guy</p>
-            </div>
-         </div>
-      </div>
+   <div class="about-me-container hide">
+      <h1> test hide </h1>
    </div>
 </div>
 

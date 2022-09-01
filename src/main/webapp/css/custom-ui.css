@@ -33,6 +33,7 @@ body{
     height: 250px;
     perspective: 1000px;
     padding: 5px;
+    order: 2;
 }
 
 .flip-card-inner {
@@ -68,4 +69,8 @@ body{
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
+}
+
+.hide{
+    display: none !important;
 }
