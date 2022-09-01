@@ -63,12 +63,16 @@ body{
 .flip-card-front {
     background-color: lightcyan;
     color: black;
+    border-radius: 10px;
 }
 
 .flip-card-back {
+    display: flex;
+    justify-content: center;
     background-color: cadetblue;
     color: white;
     transform: rotateY(180deg);
+    border-radius: 10px;
 }
 
 .hide{
@@ -82,5 +86,9 @@ td {
     border: 2px solid lightcyan;
 }
 table {
-    border-spacing: 5px;
+    border-spacing: 25px;
+}
+h1 {
+    align-self: center;
+    color: lightcyan;
 }
