@@ -1,37 +1,41 @@
-body{
+body {
     background-image: url('../images/network.gif');
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.mainContainer{
+.page-title {
+    text-align: center;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
-.card-container{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 0 0 34%;
+.about_me, .instruction, .experiences, .skills, .hobbies {
+    width: 95%;
+    padding: 5px 0 0 0;
+    border-radius: 10px;
 }
 
-.page-title{
-    position: relative;
-    text-align: center;
+.card-container {
+    padding: 0px 15px;
 }
 
 .flip-card {
     border-radius: 10px;
-    border: 2px solid lightcyan;
+    border: 2px solid #ffffff;
     position: relative;
     background-color: transparent;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     perspective: 1000px;
     padding: 5px;
 }
@@ -45,7 +49,7 @@ body{
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -61,13 +65,13 @@ body{
 }
 
 .flip-card-front {
-    background-color: lightcyan;
     color: black;
     border-radius: 10px;
 }
 
 .flip-card-back {
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color: cadetblue;
     color: white;
@@ -75,19 +79,28 @@ body{
     border-radius: 10px;
 }
 
-.hide{
-    display: none !important;
-}
-h1 {
-    align-self: center;
-    color: lightcyan;
+.white_sheet {
+    padding: 20px;
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
-.slideLeft{
+.hide {
+    display: none !important;
+}
+
+h1 {
+    align-self: center;
+    color: #ffffff;
+}
+
+.slideLeft {
     animation: moveToLeft 1s linear forwards;
     animation-delay: 100ms;
 }
-.slideRight{
+
+.slideRight {
     animation: moveToRight 1s linear forwards;
 }
 
