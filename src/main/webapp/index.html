@@ -13,62 +13,101 @@
 <div class="mainContainer">
 
     <div class="card-container">
-      <div class="flip-card">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="./images/about_me.jpeg" alt="Avatar" class="about_me">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./images/about_me.jpeg" alt="Avatar" class="about_me">
+                </div>
+                <div class="flip-card-back" onclick="toggleSheet('about_me')">
+                    <h2>About me</h2>
+                </div>
             </div>
-            <div class="flip-card-back" onclick="toggleDiv()">
-               <h2>About me</h2>
-            </div>
-         </div>
-      </div>
+        </div>
 
-      <div class="flip-card">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="./images/instruction.jpeg" alt="Avatar" class="instruction">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./images/instruction.jpeg" alt="Avatar" class="instruction">
+                </div>
+                <div class="flip-card-back" onclick="toggleSheet('instruction')">
+                    <h2>Instruction</h2>
+                </div>
             </div>
-            <div class="flip-card-back" onclick="toggleDiv(this)">
-               <h2>Instruction</h2>
-            </div>
-         </div>
-      </div>
+        </div>
 
-      <div class="flip-card">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="./images/job_experiences.jpeg" alt="Avatar" class="experiences">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./images/job_experiences.jpeg" alt="Avatar" class="experiences">
+                </div>
+                <div class="flip-card-back" onclick="toggleSheet('experiences')">
+                    <h2>Job Experiences</h2>
+                </div>
             </div>
-            <div class="flip-card-back" onclick="toggleDiv(this)">
-               <h2>Job Experiences</h2>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./images/skills.jpeg" alt="Avatar" class="skills">
+                </div>
+                <div class="flip-card-back" onclick="toggleSheet('skills')">
+                    <h2>Skills</h2>
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="flip-card">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="./images/skills.jpeg" alt="Avatar" class="skills">
-            </div>
-            <div class="flip-card-back" onclick="toggleDiv(this)">
-               <h2>Skills</h2>
-            </div>
-         </div>
-      </div>
+        </div>
 
-      <div class="flip-card">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="./images/hobbies.jpeg" alt="Avatar" class="hobbies">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./images/hobbies.jpeg" alt="Avatar" class="hobbies">
+                </div>
+                <div class="flip-card-back" onclick="toggleSheet('hobbies')">
+                    <h2>Hobbies</h2>
+                </div>
             </div>
-            <div class="flip-card-back" onclick="toggleDiv(this)">
-               <h2>Hobbies</h2>
-            </div>
-         </div>
-      </div>
+        </div>
     </div>
     <div class="white_sheet_box">
-        <div class="white_sheet"> ciao </div>
+        <div class="white_sheet">
+            <div class="inner_white_sheet slideRight-about_me">
+                <!--     About me sheet       -->
+                <div class="about_me_page">
+                    <div class="my_pic">
+                        <img src="./images/hobbies.jpeg" class="profile_pic">
+                    </div>
+                    <div class="personal_information">
+                        <p class="name">Nome: <span style="font-weight: bold">Alessio Faraone</span></p>
+                        <p class="birth_place">Luogo di nascita: <span style="font-weight: bold">Castellammare di Stabia (NA)</span>
+                        </p>
+                        <p class="birthday">Data di nascita: <span style="font-weight: bold">06/08/1991</span></p>
+                        <p class="phone_number">Contatto: <span style="font-weight: bold">3335006414</span></p>
+                        <p class="phone_number">Email: <span style="font-weight: bold"><a
+                                href="mailto:alessio.faraone@outlook.it">alessio.faraone@outlook.it</a></span></p>
+                        <p class="phone_number">Nazionalità: <span style="font-weight: bold">Italiana</span></p>
+                    </div>
+                </div>
+
+                <!--     Instruction sheet       -->
+                <div class="instruction_page">
+
+                </div>
+
+                <!--     Experiences sheet       -->
+                <div class="experiences_page">
+
+                </div>
+
+                <!--     Skills sheet       -->
+                <div class="skills_page">
+
+                </div>
+
+                <!--     Hobbies sheet       -->
+                <div class="hobbies_page">
+
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

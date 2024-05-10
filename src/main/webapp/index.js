@@ -1,17 +1,19 @@
-function toggleDiv(){
-    var mainContainerClasses = document.querySelector('.mainContainer').classList
-    if(mainContainerClasses.contains('slideLeft')){
-        mainContainerClasses.add('slideRight')
-        mainContainerClasses.remove('slideLeft');
-    }else {
-        mainContainerClasses.add('slideLeft')
-        mainContainerClasses.remove('slideRight');
+let lastShownSheet = 'about_me';
+
+function toggleSheet(card_class) {
+    let whiteSheetClasses = document.querySelector('.inner_white_sheet').classList;
+
+    if (whiteSheetClasses.contains('slideRight-' + lastShownSheet)) {
+        whiteSheetClasses.remove('slideRight-' + lastShownSheet);
+        whiteSheetClasses.add('slideLeft-' + lastShownSheet);
+        lastShownSheet = card_class;
     }
-
-
-    var flipCards = document.querySelectorAll('.flip-card');
-    flipCards.forEach(el =>{
-        // el.parentElement.parentElement.style.justifyContent='flex-start'
-        // el.classList.add('slide')
-    })
+    setTimeout(() => {
+        whiteSheetClasses.add('slideRight-' + lastShownSheet);
+        whiteSheetClasses.forEach((className) => {
+            if (className.startsWith('slideLeft')) {
+                whiteSheetClasses.remove(className);
+            }
+        });
+    }, 1500);
 }

@@ -87,11 +87,36 @@ body {
     border-radius: 10px;
 }
 
+.personal_information {
+    padding: 0 0 0 20px
+}
+
+.personal_information p {
+    font-size: 25px;
+}
+
+.about_me_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.profile_pic {
+    border-radius: 50px;
+    height: 350px;
+    width: 350px;
+}
+
 .white_sheet {
     width: 100%;
     height: 100%;
     background-color: #ffffff;
     border-radius: 10px;
+}
+
+.inner_white_sheet {
+    height: 100%;
+    width: 100%;
 }
 
 .hide {
@@ -103,37 +128,202 @@ h1 {
     color: #ffffff;
 }
 
-.slideLeft {
-    animation: moveToLeft 1s linear forwards;
-    animation-delay: 100ms;
+/*------------------------------------ SLIDER SECTION ------------------------------------*/
+
+.slideLeft-about_me {
+    animation: moveToLeft-about_me 1.5s linear forwards;
+    animation-delay: 200ms;
 }
 
-.slideRight {
-    animation: moveToRight 1s linear forwards;
+.slideRight-about_me {
+    animation: moveToRight-about_me 1.5s linear forwards;
 }
 
-@keyframes moveToLeft {
+@keyframes moveToLeft-about_me {
     from {
         -ms-transform: translate(0px) scale(1);
         -webkit-transform: translate(0px) scale(1);
         transform: translate(0px) scale(1);
     }
     to {
-        -ms-transform: translate(-40%) scale(0.5);
-        -webkit-transform: translate(-40%) scale(0.5);
-        transform: translate(-40%) scale(0.5);
+        -ms-transform: translate(-62%, -45%) scale(0);
+        -webkit-transform: translate(-62%, -45%) scale(0);
+        transform: translate(-62%, -45%) scale(0);
+        opacity: 0;
     }
 }
 
-@keyframes moveToRight {
+@keyframes moveToRight-about_me {
     from {
-        -ms-transform: translate(-40%) scale(0.5);
-        -webkit-transform: translate(-40%) scale(0.5);
-        transform: translate(-40%) scale(0.5);
+        -ms-transform: translate(-62%, -45%) scale(0);
+        -webkit-transform: translate(-62%, -45%) scale(0);
+        transform: translate(-62%, -45%) scale(0);
+        opacity: 0;
     }
     to {
         -ms-transform: translate(0px) scale(1);
         -webkit-transform: translate(0px) scale(1);
         transform: translate(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+
+.slideLeft-instruction {
+    animation: moveToLeft-instruction 1.5s linear forwards;
+    animation-delay: 200ms;
+}
+
+.slideRight-instruction {
+    animation: moveToRight-instruction 1.5s linear forwards;
+}
+
+@keyframes moveToLeft-instruction {
+    from {
+        -ms-transform: translate(0px) scale(1);
+        -webkit-transform: translate(0px) scale(1);
+        transform: translate(0px) scale(1);
+    }
+    to {
+        -ms-transform: translate(-62%, -20%) scale(0);
+        -webkit-transform: translate(-62%, -20%) scale(0);
+        transform: translate(-62%, -20%) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes moveToRight-instruction {
+    from {
+        -ms-transform: translate(-62%, -20%) scale(0);
+        -webkit-transform: translate(-62%, -20%) scale(0);
+        transform: translate(-62%, -20%) scale(0);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: translate(0px) scale(1);
+        -webkit-transform: translate(0px) scale(1);
+        transform: translate(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+
+.slideLeft-experiences {
+    animation: moveToLeft-experiences 1.5s linear forwards;
+    animation-delay: 200ms;
+}
+
+.slideRight-experiences {
+    animation: moveToRight-experiences 1.5s linear forwards;
+}
+
+@keyframes moveToLeft-experiences {
+    from {
+        -ms-transform: translate(0px) scale(1);
+        -webkit-transform: translate(0px) scale(1);
+        transform: translate(0px) scale(1);
+    }
+    to {
+        -ms-transform: translate(-62%) scale(0);
+        -webkit-transform: translate(-62%) scale(0);
+        transform: translate(-62%) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes moveToRight-experiences {
+    from {
+        -ms-transform: translate(-62%) scale(0);
+        -webkit-transform: translate(-62%) scale(0);
+        transform: translate(-62%) scale(0);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: translate(0px) scale(1);
+        -webkit-transform: translate(0px) scale(1);
+        transform: translate(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+
+.slideLeft-skills {
+    animation: moveToLeft-skills 1.5s linear forwards;
+    animation-delay: 200ms;
+}
+
+.slideRight-skills {
+    animation: moveToRight-skills 1.5s linear forwards;
+}
+
+@keyframes moveToLeft-skills {
+    from {
+        -ms-transform: translate(0px) scale(1);
+        -webkit-transform: translate(0px) scale(1);
+        transform: translate(0px) scale(1);
+    }
+    to {
+        -ms-transform: translate(-62%, 25%) scale(0);
+        -webkit-transform: translate(-62%, 25%) scale(0);
+        transform: translate(-62%, 25%) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes moveToRight-skills {
+    from {
+        -ms-transform: translate(-62%, 25%) scale(0);
+        -webkit-transform: translate(-62%, 25%) scale(0);
+        transform: translate(-62%, 25%) scale(0);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: translate(0px) scale(1);
+        -webkit-transform: translate(0px) scale(1);
+        transform: translate(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+
+.slideLeft-hobbies {
+    animation: moveToLeft-hobbies 1.5s linear forwards;
+    animation-delay: 200ms;
+}
+
+.slideRight-hobbies {
+    animation: moveToRight-hobbies 1.5s linear forwards;
+}
+
+@keyframes moveToLeft-hobbies {
+    from {
+        -ms-transform: translate(0px) scale(1);
+        -webkit-transform: translate(0px) scale(1);
+        transform: translate(0px) scale(1);
+    }
+    to {
+        -ms-transform: translate(-62%, 45%) scale(0);
+        -webkit-transform: translate(-62%, 45%) scale(0);
+        transform: translate(-62%, 45%) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes moveToRight-hobbies {
+    from {
+        -ms-transform: translate(-62%, 45%) scale(0);
+        -webkit-transform: translate(-62%, 45%) scale(0);
+        transform: translate(-62%, 45%) scale(0);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: translate(0px) scale(1);
+        -webkit-transform: translate(0px) scale(1);
+        transform: translate(0px) scale(1);
+        opacity: 1;
     }
 }
